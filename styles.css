@@ -1,0 +1,135 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+    color: #555;
+    background-image: url('aesthetic-background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: rgba(255, 132, 124, 0.9);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-top {
+    padding-bottom: 0;
+}
+
+.gallery-bottom {
+    padding-top: 0;
+}
+
+.photo img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.photo img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.quote {
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.love-letter {
+    background-color: rgba(255, 255, 255, 0.85);
+    margin: 50px auto;
+    padding: 50px;
+    max-width: 900px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.love-letter h2 {
+    margin-bottom: 25px;
+    color: #ff847c;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.love-letter p {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(51, 51, 51, 0.9);
+    color: white;
+    font-size: 1rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        padding: 20px;
+    }
+
+    .love-letter {
+        margin: 20px;
+        padding: 30px;
+    }
+
+    .love-letter h2 {
+        font-size: 2rem;
+    }
+
+    .love-letter p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .love-letter h2 {
+        font-size: 1.5rem;
+    }
+
+    .love-letter p {
+        font-size: 1rem;
+    }
+}
